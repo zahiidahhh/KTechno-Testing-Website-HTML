@@ -1,0 +1,11 @@
+    $mailHeaders = "Name : " . $name .
+    "\r\n Email Address : " . $email .
+    "\r\n Phone No. : " . $phone .
+    "\r\n Message : " . $message . "\r\n";
+
+    if (mail($toEmail, $name, $mailHeaders)) {
+      $message = "Your details has been successfully sent! We will be contact you as soon as possible.
+      If there is no further response from us, please call the number listed on Contact Info.
+      Thank you for your understanding!";
+    }
+  }
